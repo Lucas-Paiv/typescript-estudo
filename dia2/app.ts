@@ -36,32 +36,3 @@ const transaction: Transactio = {
 
 //Interface (classes, funções) x Types(objetos, arrays). Ex:
 
-type User ={
-    id: number,
-    nome: string
-}
-
-type Admin = User & {
-    permisions: string[]
-}
-
-const admin: Admin = {
-    id: 0,
-    nome: "",
-    permisions: ["create", "delete"]
-}
-
-interface U {
-    id: number,
-    nome: string
-}
-
-interface Adm extends U{
-    permisions: string[]
-}
-
-const adm: Adm ={
-    id: 0,
-    nome: "",
-    permisions: ["create", "delete"]
-}
